@@ -1,0 +1,358 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0px 0px 0px ;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(backg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 80px;
+}
+.nav h1 {
+    font-size: 60px;
+    margin-bottom: -10px;
+    font-family: 'Belanosima', sans-serif;
+}
+.nav h2 {
+    font-size: 40px;
+    color: rgb(233, 199, 8);
+    font-family: 'Fasthand', cursive;
+}
+.nav  a {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 18px;
+    /*background-color: rgb(13, 188, 219);*/
+}
+.nav  a:hover,
+.nav .active {
+    color: rgb(233, 199, 8);
+}
+ 
+.nav a i {
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.nav a i:hover {
+    color: rgb(233, 199, 8);
+}
+.main .ourKitchen {
+    margin: 0px 30px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.main .kitchenContent {
+    text-align: left;
+    margin-left: 60px;
+}
+.main .kitchenContent h3 {
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #666;
+}
+.main .kitchenContent h2 {
+    font-size: 30px;
+    color: rgb(233, 199, 8);
+}
+/*Wines content start*/
+.main .ourWines {
+    /*background-color: gray;*/
+    margin: 0 30px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.main .ourWines .winesContent {
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 2.8em;
+}
+.main .ourWines .winesContent h3 {
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #666;
+}
+.main .ourWines .winesContent h2 {
+    font-size: 30px;
+    color: rgb(233, 199, 8);
+}
+/* Wines conent end*/
+
+.main .parteners {
+    margin: 0px 30px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.main .partenersContent {
+    text-align: left;
+    margin-left: 60px;
+    line-height: 2.8em;
+}
+.main .partenersContent h3 {
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #666;
+}
+.main .partenersContent h2 {
+    font-size: 30px;
+    color: rgb(233, 199, 8);
+}
+.followUs {
+    width: 95%;
+    margin: 0 30px;
+}
+.followUs p{
+    margin: 20px 20px 40px 10px;
+    background-color: rgb(233, 199, 8);
+    width: 200px;
+    padding: 18px;
+    color: white;
+    font-weight: 50;
+}
+.followUs p i {
+    margin-right: 10px;
+}
+.followUs .instImg {
+    width: 1300px;
+    display: inline;
+
+}
+.followUs .instImg img {
+    width: 220px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.followUs .instImg img:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 7px 10px rgba(41, 39, 39, 0.7);
+}
+.followUs .btn {
+    margin: 0px 15px 40px 0px;
+    text-align: right;
+}
+.followUs .btn button {
+    padding: 13px 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.followUs .btn button:hover {
+    background-color: rgb(211, 181, 9);
+    color: #fff;
+    font-weight: 600;
+}
+.contactForm form {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin:auto;
+    padding: 20px;
+}
+.contactForm .contactImg img {
+    width: 350px;
+}
+.contactForm .inputBox {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    position: relative;
+}
+.contactForm .inputBox h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #333;
+    text-align: center;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-size: 16px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 230, 0);
+}
+.contactForm .inputBox label {
+    position: absolute;
+    left: 30px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-size: 16px;
+    pointer-events: none;
+    color: #666;
+    transition: 0.5s;
+}
+.contactForm .inputBox input:focus ~ label,
+.contactForm .inputBox input:valid ~ label,
+.contactForm .inputBox textarea:focus ~ label,
+.contactForm .inputBox textarea:valid ~ label{
+    color: #333;
+    font-size: 13px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox .btn-2 {
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+.contactForm .inputBox .btn-2 button {
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+.contactForm .contactAdress {
+    padding: 10px;
+    text-align: none;
+    line-height: 1.9;
+}
+.contactForm .contactAdress h2 {
+    text-align: left;
+    color: rgb(247, 222, 4);
+    font-size: 35px;
+    font-weight: 700;
+}
+.contactForm .contactAdress p {
+    margin-top: 20px;
+}
+.contactForm .contactAdress p i {
+    margin-right: 10px;
+    color: rgb(247, 222, 4);
+    font-weight: 700;
+
+}
+.contactForm .inst-fac i{
+    border: 2px solid rgb(185, 181, 181);
+    padding: 10px;
+    margin-left: 20px;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(255, 230, 0);
+    font-size: 25px;
+    transition: 0.5s;
+}
+.contactForm .inst-fac i:hover {
+    color: rgb(185, 181, 181);
+}
+.footer {
+    width: auto;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media screen and (max-width: 1115px) {
+    .nav  a {
+        font-size: 15px;
+    }
+    .nav  a i{
+        font-size: 14px;
+        display: inline-block;
+    }
+    .ourKitchen {
+        width: auto;
+    }
+    .ourKitchen img {
+        width: 50%;
+        height: 500px;
+        /*width: 500px;
+        height: 550px;*/
+    }
+    .ourKitchen p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    
+    .ourKitchen p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav a{
+        display: block;
+    }
+    .main .kitchenContent h2 {
+        font-size: 25px;
+    }
+    .ourKitchen p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .nav h1 {
+        font-size: 38px;
+    }
+    .nav h2 {
+        font-size: 30px;
+    }
+    .nav a i {
+        font-size: 20px;
+    }
+    .main .ourKitchen  {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .main .ourKitchen img {
+        width: 95%;
+        
+    }
+
+    .main .ourWines  {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .main .parteners  {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .contactForm form {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}

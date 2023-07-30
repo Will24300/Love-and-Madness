@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Trebuchet Ms';
+}
+.navTop {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    color: orangered;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.navLogo {
+    font-size: 22px;
+    font-family: "Permanent Marker", cursive;
+}
+.navLinks a {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    opacity: 1;
+    transition: .7s;
+    font-weight: 600;
+}
+.navLinks a:hover {
+    color: rgb(226, 68, 10);
+    opacity: 1;
+}
+.navLinks a:nth-child(1){
+    color: orangered;
+}
+.shoppingBtn {
+    position: relative;   
+}
+.shoppingBtn button {
+    padding: 10px 35px 8px 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    transition: .7s;
+    color: white;
+    font-weight: 700;
+}
+.shoppingBtn img {
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    cursor: pointer;
+}
+.shoppingBtn button:active{
+    background-color: white;
+}
+/* NAV BOTTOM */
+.navBottom {
+    width: 270px;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: 13%;
+    box-shadow: 0 0 10px;
+    height: 360px;
+    border-bottom-left-radius: 10px;
+    animation: shoppingAnimation .7s;
+    display: none;
+}
+.navBottom .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+}
+.navBottom .box:last-child{
+    border-bottom: none;
+}
+.navBottom .box p {
+    font-size: 16px;
+}
+.navBottom .box h3 {
+    font-size: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+.navBottom .box h3:hover {
+    color: orangered;
+}
+.hide {
+    display: block;
+}
+.bar-menu {
+    display: none;
+}
+
+/* SECTION HOME*/
+.home{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(99, 39, 11, 0.5)), url("./img/background4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    margin: 0px auto 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 90vh;
+}
+.home h1{
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+.home h1 span {
+    color: orangered;
+}
+.home h2 {
+    font-size: 35px;
+    font-family: "Permanent Marker", cursive;
+    margin-bottom: 20px;
+    color: orangered;
+}
+.home p {
+    line-height: 1.8;
+    width: 900px;
+    margin: 0px auto 30px;
+}
+.home button {
+    width: 120px;
+    height: 45px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: white;
+    font-weight: 300;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.home button::after {
+    content: '';
+    width: 0;
+    height: 42px;
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+    z-index: -1;
+    transition: .7s;
+}
+.home button:hover::after{
+    width: 100%;
+}
+/* ABOUT SECTION*/
+
+.about {
+    background-color: #000;
+    padding-top: 150px;
+    color: white;
+}
+.about .container h2 {
+    text-align: center; 
+    font-size: 2.1rem;  
+    text-transform: uppercase; 
+    padding-bottom: 40px;
+}
+.about .container h2 span {
+    color: orangered;
+}
+.about .boxes {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.about .boxImg img {
+    width: 500px;
+    height: 500px;
+}
+.about .boxPara {
+    margin-left: 20px;
+    width: 650px;
+
+}
+.about .boxPara h3 {
+    color: orangered;
+    font-size: 30px;
+    margin: 0px 0px 40px;
+    font-family: "Permanent Marker", cursive;
+}
+.about .boxPara p {
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about .boxPara button {
+    padding: 10px 20px;
+    margin: 60px auto 20px;
+    margin-left: 40%;
+    border: none;
+    background-color: #fff;
+    color: chocolate;
+    transition: .7s;
+    cursor: pointer;
+}
+.about .boxPara button:hover {
+    background-color: chocolate;
+    color: white;
+}
+/*PRODUCTS SECTION*/
+
+.products {
+    background-color: #000;
+    padding-top: 150px;
+    color: white;
+    padding-bottom: 5px;
+}
+.products h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.products h2 span {
+    color: orangered;
+}
+.products .arrows img {
+    background-color: orangered;
+}
+.products .arrows .arrowLeft {
+
+    transform: rotate(180deg);
+}
+.products .content {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.products .boxes {
+   width: 210vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.products .boxes .box {
+    width: 30vw;
+    margin-left: 15px;
+    padding: 25px 10px 10px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+    
+}
+.products .boxes .box img {
+    transition: .7s;
+    cursor: pointer;
+    padding-bottom: 20px;
+    width: 340px;
+}
+.products .boxes .box img:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+.products .boxes .box .prices {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 15px;
+    font-size: 20px;
+}
+.products .boxes button {
+    padding: 8px 25px;
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+.products .boxes .box:nth-child(1) button:hover {
+    background-color: chocolate;
+    color: white;
+}
+.products .boxes .box:nth-child(2) button:hover {
+    background-color: red;
+    color: white;
+}
+.products .boxes .box:nth-child(3) button:hover {
+    background-color: orange;
+    color: white;
+}
+.products .boxes .box:nth-child(4) button:hover {
+    background-color: darkblue;
+    color: white;
+}
+.products .boxes .box:nth-child(5) button:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+.products .boxes .box:nth-child(6) button:hover {
+    background-color: coral;
+    color: white;
+}
+.products .boxes .box:nth-child(7) button:hover {
+    background-color: teal;
+    color: white;
+}
+.products .container {
+    position: relative;
+}
+.products .arrowLeft {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    cursor: pointer;
+    transition: .5s;
+}
+.products .arrowLeft:active {
+    background-color: white;
+}
+.products .arrowRight {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.products .arrowRight:active {
+    background-color: white;
+}
+.products #productBoxes {
+    transition: all 1s;
+}
+/*REVIEW SECTION*/
+.review {
+    background-color: #000;
+    color: white;
+}
+.review .container {
+    padding-top: 100px;
+}
+.review h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+}
+.review h2 span {
+    color: orangered;
+}
+.review .boxes {
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.review .box {
+    border: 1px solid orangered;
+    padding: 20px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+.review .box img{
+    padding-top: 20px;
+    border-radius: 50%;
+}
+/* CONTACT SECTION*/
+#contact  {
+    background-color: #000;
+    padding-top: 100px;
+    color: white;
+    padding-bottom: 50px;
+}
+#contact h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+#contact h2 span {
+    color: orangered;
+}
+.contactForm form {
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.contactForm .contactImg img {
+    width: 350px;
+}
+.contactForm .inputBox {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    position: relative;
+}
+.contactForm .inputBox h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-size: 16px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid orangered;
+}
+.contactForm .inputBox label {
+    position: absolute;
+    left: 30px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-size: 16px;
+    pointer-events: none;
+    color: #666;
+    transition: 0.5s;
+}
+.contactForm .inputBox input:focus ~ label,
+.contactForm .inputBox input:valid ~ label,
+.contactForm .inputBox textarea:focus ~ label,
+.contactForm .inputBox textarea:valid ~ label{
+    color: #333;
+    font-size: 13px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox .btn-2 {
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+.contactForm .inputBox .btn-2 button {
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+
+}
+.contactForm .inputBox .btn-2 button:active{
+    background-color: #111;
+}
+.contactForm .contactAdress {
+    padding: 10px;
+    text-align: none;
+    line-height: 1.9;
+}
+.contactForm .contactAdress h2 {
+    text-align: left;
+    color: orangered;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Permanent Marker", cursive;
+}
+.contactForm .contactAdress p {
+    margin-top: 20px;
+}
+.contactForm .contactAdress p i {
+    margin-right: 10px;
+    color: orangered;
+    font-weight: 700;
+
+}
+.contactForm .inst-fac i{
+    border: 2px solid rgb(185, 181, 181);
+    padding: 10px;
+    margin-left: 20px;
+    align-items: center;
+    border-radius: 50%;
+    color: orangered;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.contactForm .inst-fac i:hover {
+    color: rgb(185, 181, 181);
+}
+/*FOOTER*/
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 10px;
+    font-family: "Permanent Marker", cursive;
+}
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .rightSide {
+    padding-bottom: 20px;
+    display: in;
+    justify-content: center;
+    align-items: center;
+}
+footer .rightSide img {
+    background-color: #000;
+    padding: 10px;
+    margin: 0px 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .7s;
+}
+footer .rightSide img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 830px) {
+    .navTop {
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .navBottom {
+        display: none;
+    }
+    .navLogo {
+        padding: 10px;
+        z-index: 2;
+    }
+    .shoppingBtn {
+        display: none;
+    }
+    .navLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 0;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: #111;
+        position: absolute;
+        animation: navLinks .5s;
+        display: none;
+    }
+    .navLinks a {
+        padding: 20px;
+        text-transform: uppercase;
+        font-size: 15px;
+        width: 200px;
+    }
+    .active {
+        display: flex;
+    }
+    .bar-menu {
+        position: absolute;
+        right: -35px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        z-index: 2;
+        cursor: pointer;
+        padding: 5px 30px 2px 5px;
+    }
+    .bar-menu .bar {
+        position: relative;
+        margin-bottom: 7px;
+        
+    }
+    .bar-menu .bar::after{
+        content: '';
+        width: 25px;
+        height: 2.5px;
+        background-color: white;
+        position: absolute;
+    }
+
+    /*HOME SECTION*/
+    
+    
+}
+
+
+
+@keyframes shoppingAnimation {
+    from {
+        right: -200px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes navLinks {
+    from {
+        top: -300px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
